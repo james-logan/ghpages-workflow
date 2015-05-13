@@ -1,0 +1,17 @@
+{
+  "name": "ghpages-workflow",
+  "version": "1.0.0",
+  "homepage": "https://github.com/james-logan/ghpages-workflow",
+  "authors": [
+    "James Logan <jamesblogan20@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
