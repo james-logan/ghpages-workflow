@@ -2,7 +2,9 @@
 
 #clean and prepare public directory
 rm -rf public
-mkdir public
+
+#copy src dir to public
+cp -r src public
 
 #complie jade to html
 ./node_modules/.bin/jade src -P
@@ -19,5 +21,12 @@ rm -rf public/_partials
  --source-map-embed \
  src/_styles/main.scss public/css/main.css
 
-#conver ES6 JS TO ES5
+#convert ES6 JS TO ES5
 ./node_modules/.bin/babel src --out-dir public -s inline
+
+
+#clean unneeded files
+
+rm -rf public/_styles \
+       public/*.jade \
+       public/**/*.jade
