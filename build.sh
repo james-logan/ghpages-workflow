@@ -24,6 +24,8 @@ rm -rf public/_partials
 #convert ES6 JS TO ES5
 ./node_modules/.bin/babel src --out-dir public -s inline
 
+#concat bower_components to public/lib directory
+./node_modules/.bin/bowcat . -o public/lib -m
 
 #clean unneeded files
 
